@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/script.js" defer></script>
+  <title>Formulario Registro de Tarefas</title>
+</head>
+
+<body>
+
+  <form id="form-tarefa" action="#">
+    <section class="form-register">
+      <h4>Registrar Tarefa</h4>
+      <input class="inputs" type="text" name="descricao" id="descricao" placeholder="Descriçao">
+      <input class="inputs" type="text" name="responsavel" id="responsavel" placeholder="Nome do Responsavel">
+
+      <select class="inputs" id="nivel" name="nivel">
+        <option value="">Nivel</option>
+        <option value="1">1</option>
+        <option value="3">3</option>
+        <option value="5">5</option>
+        <option value="8">8</option>
+      </select>
+
+
+      <select class="inputs" id="prioridade" name="prioridade">
+        <option value="">Prioridade</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+
+      <!-- Filtro por Situação -->
+      <select class="inputs" id="situacao" name="situacao">
+        <option value="">Situação</option>
+        <option value="Nova">Nova</option>
+        <option value="Em Andamento">Em andamento</option>
+        <option value="Pendente">Pendente</option>
+        <option value="Resolvida">Resolvida</option>
+        <option value="Cancelada">Cancelada</option>
+      </select>
+  
+
+      <input id="btn-cancelar" class="buttons" type="reset" value="Cancelar">
+      <input id="btn-confirmar" class="buttons" type="submit" value="Registrar">
+
+
+      <h4>Tarefas Cadastradas</h4>
+      <table cellspacing="14" id="list-tarefas">
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th>Nivel</th>
+            <th>Prioridade</th>
+            <th>Situação</th>
+            <th>Responsavel</th>
+          </tr>
+        </thead>
+        <tbody class="tabela">
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </form>
+</body>
+
+</html>
